@@ -19,6 +19,11 @@
     margin: auto;
     background-color: white;
    }
+
+   .logo {
+    max-height: 80%;
+    max-width: 80%;
+   }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-left: 15px;
@@ -27,10 +32,14 @@
            
     }
     /* how to change color of navbar */  
-      .navbar-inverse {
+    .navbar-inverse {
     background-color: #df4937;
     border: 0;
       }
+
+    .navbar-container {
+      padding: 0;
+    }
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
     
@@ -71,7 +80,7 @@
           }
       }
       .btn {
-            position: static;
+            align-self: center;
 
       }
       
@@ -82,7 +91,7 @@
     
 
     <div class="jumbotron">
-            <img src="C:\Users\sagar\Documents\GitHub\ninjaconstruction\Images\400dpiLogo.png" alt="Ninja Construction" height="325" width="600">
+            <img class="logo" src="Images/400dpiLogo.png" alt="Ninja Construction">
             <div class="btn btn-default btn-lg">
             <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Call Us</a>
             </div>
@@ -90,15 +99,8 @@
       </div>  
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
+  <div class="container-fluid navbar-container">
+    
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
