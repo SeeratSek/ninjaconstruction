@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -81,22 +83,15 @@
       .row.content {height:auto;} 
     }
 
-    .jumbotron {
-        margin-bottom: 0px;
-      ``background-color: white;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
+    
       h1{ 
           text-align: left;
       }
       p{
               text-align: left;
-          }
+          
       }
-      .btn {
-            align-self: center;
-      }
+
       .flex-container {
             display: flex;
             flex-direction: row;
@@ -109,98 +104,34 @@
               
       }
 
-
-    .flex-container-phone {
-      max-width: 30%;
-      display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-    }
-
-    .logo-container {
-      min-width: 70%;
-    }
+        /* Make the image fully responsive */
+        .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+      .carousel {
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-top: 25px;
+          padding-bottom: 25px;
+      }
   
-      #hello {
-        padding: 5px;
-      }
-      #Quote {
-        padding: 5px;
-
-      }
-      .btn-info {
-            color: #C02830;
-            background-color: white;
-            border-color: #C02830;
-          font-size: 20px;
-      }
-      .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
-    color: #fff;
-    background-color: #C02830;
-    border-color: #C02830; /*set the color you want here*/
-}
-      .tm-subnav-panel2 {
-          padding-top: 15px;
-          padding-left: 5px;
-          padding-bottom: 15px;
-      }
+     
       
   </style>
 </head>
+
+<div id="header"></div>
 <body>
   <div class="content">
-    
+    <div w3-include-html="header.html"></div>
 
-    <div class="jumbotron header">
-        <div class="flex-container">
-            
-        <div class="uk-text-center logo-container">
-              <img class="img-responsive" src="Images/400dpiLogoCropped.png" alt="Ninja Construction Group" width="600" height="450"> 
-        </div>
-            
-            <div class="flex-container-phone">
-            <div id ="Quote">
-                <a href="Contact.html" class="btn btn-info" role="button">Free Quote</a>
-             
-            </div>
-            <div id="hello">
-                <a href="tel:16047863325" onclick="ga('send', 'event', 'calls', 'click', 'phone number');" class="btn btn-info" role="button">(604) 111-1111</a>
-</div>
-</div>
-</div>
-        </div>
+    
         
 
       </div> 
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid navbar-container">
-      <div class="navbar-header">	    
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">	
-            <span class="icon-bar"></span>	
-            <span class="icon-bar"></span>	
-            <span class="icon-bar"></span>                        	
-          </button>	
-          <a class="navbar-brand" href="#">Ninja Construction</a>	
-        </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="Decks.html">Decks</a></li>
-        <li><a href="Renos.html">Renovations</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
 
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <div class="flex-container carousel-container"> 
     <div id="carouselExampleControls" flex-grow=1 class="carousel slide carousel-custom" data-ride="carousel">
         <div class="carousel-inner">
@@ -285,6 +216,10 @@ Whether it be treated decking or composite decking, we’ll make sure you get th
     <div class="uk-panel widget_text"><div>Copyright © 2018 Ninja Construction Group| Deck Builder, Vancouver Sundecks | <a href="http://www.citywidesundecks.ca/sitemap.xml" target="_blank">Sitemap</a> | <a href="http://www.citywidesundecks.ca/wp-content/uploads/2017/01/Citywide-Sundecks-Privacy-Policy.pdf" target="_blank">Privacy Policy</a><br>Web Design &amp; <a href="http://www.roiwebmarketing.com" target="_blank">Vancouver Internet Marketing</a> by ROI Web Marketing</div></div>
 </footer>
 </div>
+
+<script>
+    w3.includeHTML();
+    </script>
 
 </body>
 </html>
